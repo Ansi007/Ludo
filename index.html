@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>LUDO</title>
+</head>
+
+<body>
+    <div id="mainLeft">
+        <div class="dice">
+            <img src="Images/Dice/dice-1.png" alt="Dice" class="diceimg" id="currDice">
+        </div>
+    </div>
+
+    </div>
+    <div class="main">
+        <div class="mainHome green">
+            <div class="Home">
+                <div class="top">
+                    <div class="Piece green">
+                        <img src="Images/greenPiece.png" alt="">
+                    </div>
+
+                    <div class="Piece green">
+                        <img src="Images/greenPiece.png" alt="">
+                    </div>
+                </div>
+
+                <div class="bottom">
+
+                    <div class="Piece green">
+                        <img src="Images/greenPiece.png" alt="">
+                    </div>
+
+                    <div class="Piece green">
+                        <img src="Images/greenPiece.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="verticalPath">
+            <div class="block"></div>
+            <div class="block "></div>
+            <div class="block"></div>
+            <div class="block "></div>
+            <div class="block yellow"></div>
+            <div class="block yellow"></div>
+            <div class="block yellow"></div>
+            <div class="block yellow"></div>
+            <div class="block "></div>
+            <div class="block "></div>
+            <div class="block yellow"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block yellow"></div>
+            <div class="block "></div>
+            <div class="block"></div>
+            <div class="block yellow"></div>
+            <div class="block"></div>
+        </div>
+
+        <div class="mainHome yellow">
+            <div class="Home">
+                <div class="top">
+                    <div class="Piece yellow">
+                        <img src="Images/yellowPiece.png" alt="">
+                    </div>
+
+                    <div class="Piece yellow">
+                        <img src="Images/yellowPiece.png" alt="">
+                    </div>
+                </div>
+
+                <div class="bottom">
+
+                    <div class="Piece yellow">
+                        <img src="Images/yellowPiece.png" alt="">
+                    </div>
+
+                    <div class="Piece yellow">
+                        <img src="Images/yellowPiece.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontalPath">
+            <div class="block"></div>
+            <div class="block green"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block green"></div>
+            <div class="block green"></div>
+            <div class="block green"></div>
+            <div class="block green"></div>
+            <div class="block green"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block green"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+
+        <div class="win">
+            <div class="left"></div>
+            <div class="up "></div>
+            <div class="down "></div>
+            <div class="right "></div>
+        </div>
+
+        <div class="horizontalPath">
+            <div class="block"></div>
+            <div class="block "></div>
+            <div class="block"></div>
+            <div class="block blue"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block blue"></div>
+            <div class="block blue"></div>
+            <div class="block blue"></div>
+            <div class="block blue"></div>
+            <div class="block blue"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block "></div>
+            <div class="block"></div>
+            <div class="block blue"></div>
+            <div class="block"></div>
+        </div>
+
+        <div class="mainHome red">
+            <div class="Home">
+                <div class="top">
+                    <div class="Piece red">
+                        <img src="Images/redPiece.png" alt="" id="red1">
+                    </div>
+
+                    <div class="Piece red">
+                        <img src="Images/redPiece.png" alt="" id="red2">
+                    </div>
+                </div>
+
+                <div class="bottom">
+
+                    <div class="Piece red">
+                        <img src="Images/redPiece.png" alt="" id="red3">
+                    </div>
+
+                    <div class="Piece red">
+                        <img src="Images/redPiece.png" alt="" id="red4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="verticalPath">
+            <div class="block"></div>
+            <div class="block red"></div>
+            <div class="block"></div>
+            <div class="block "></div>
+            <div class="block red"></div>
+            <div class="block "></div>
+            <div class="block "></div>
+            <div class="block red"></div>
+            <div class="block "></div>
+            <div class="block "></div>
+            <div class="block red"></div>
+            <div class="block red"></div>
+            <div class="block red" id="redStart">
+            </div>
+            <div class="block red"></div>
+            <div class="block "></div>
+            <div class="block"></div>
+            <div class="block "></div>
+            <div class="block"></div>
+        </div>
+
+        <div class="mainHome blue">
+            <div class="Home">
+                <div class="top">
+                    <div class="Piece blue">
+                        <img src="Images/bluePiece.png" alt="">
+                    </div>
+
+                    <div class="Piece blue">
+                        <img src="Images/bluePiece.png" alt="">
+                    </div>
+                </div>
+
+                <div class="bottom">
+
+                    <div class="Piece blue">
+                        <img src="Images/bluePiece.png" alt="">
+                    </div>
+
+                    <div class="Piece blue">
+                        <img src="Images/bluePiece.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainRight"></div>
+</body>
+
+</html>
